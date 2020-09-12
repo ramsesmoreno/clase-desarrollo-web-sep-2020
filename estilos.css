@@ -5,3 +5,11 @@ h2 {
 h1 {
     color: blue;
 }
+
+section {
+    background-color: aqua;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 20px solid red;
+}
