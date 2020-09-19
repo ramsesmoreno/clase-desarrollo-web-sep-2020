@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsivo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        section.resenas {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        section.resenas p {
+            width: 20%;
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+        @media (max-width: 900px) {
+            section.resenas p {
+                width: 40%;
+                background-color: cyan;
+            }
+        }
+        @media (max-width: 500px) {
+            section.resenas p {
+                width: 100%;
+                background-color: yellow;
+            }
+            h1 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsivo</h1>
+    <img src="https://picsum.photos/400">
+    <section class="resenas">
+        <p>Párrafo 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia <em>ratione</em> praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta reprehenderit nisi tempore ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+        
+        <p>Párrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Mollitia</strong> ratione praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta <em>reprehenderit nisi tempore</em> ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+        <p>Párrafo 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia <em>ratione</em> praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta reprehenderit nisi tempore ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Mollitia</strong> ratione praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta <em>reprehenderit nisi tempore</em> ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia <em>ratione</em> praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta reprehenderit nisi tempore ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Mollitia</strong> ratione praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta <em>reprehenderit nisi tempore</em> ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+
+    <p>Párrafo 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia <em>ratione</em> praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta reprehenderit nisi tempore ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Mollitia</strong> ratione praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta <em>reprehenderit nisi tempore</em> ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    </section>
+    
+    <nav>
+        <a href="/">Uno</a>
+        <a href="/">Dos</a>
+        <a href="/">Tres</a>
+    </nav>
+</body>
+</html>
