@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        p strong {
+            color: red;
+            position: relative;
+            bottom: 10px;
+            right: 0px;
+        }
+        p em {
+            color: green;
+            background-color: greenyellow;
+            position: absolute;
+            top: -1rem;
+            right: -0.5em;
+        }
+        p {
+            position: relative;
+            border: 1px solid orange;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: yellow;
+            padding: 1em;
+        }
+        body {
+            padding-top: 4em;
+        }
+        .pegajoso {
+            background-color: cyan;
+            position: sticky;
+            top: 3rem;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionamiento</h1>
+    <p>Párrafo 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia <em>ratione</em> praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta reprehenderit nisi tempore ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <div class="pegajoso">Sticky</div>
+    <p>Párrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Mollitia</strong> ratione praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta <em>reprehenderit nisi tempore</em> ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia <em>ratione</em> praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta reprehenderit nisi tempore ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Mollitia</strong> ratione praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta <em>reprehenderit nisi tempore</em> ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia <em>ratione</em> praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta reprehenderit nisi tempore ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Mollitia</strong> ratione praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta <em>reprehenderit nisi tempore</em> ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+
+    <p>Párrafo 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia <em>ratione</em> praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta reprehenderit nisi tempore ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <p>Párrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Mollitia</strong> ratione praesentium dolore nobis, doloribus, at molestias ipsam quia quas soluta <em>reprehenderit nisi tempore</em> ducimus deleniti voluptas facilis. Atque, sapiente possimus.</p>
+    <nav>
+        <a href="/">Uno</a>
+        <a href="/">Dos</a>
+        <a href="/">Tres</a>
+    </nav>
+</body>
+</html>
