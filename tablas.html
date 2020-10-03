@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+        }
+        table th {
+            border: 1px solid #ccc;
+        }
+        table tbody th {
+            text-align: right;
+            background-color: rgba(255, 255, 0, 0.25);
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #eee;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: #ddd;
+        }
+        table thead tr {
+            background-color: #eef;
+        }
+        table tbody tr {
+            transition: all 0.25s;
+        }
+        table tbody tr:hover {
+            outline: 2px dotted red;
+            background-color: yellow;
+            cursor: crosshair;
+        }
+        table td {
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        th, td {
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1> Tablas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Meses</th>
+                <th colspan="2">Frutas</th>
+                <th colspan="2">Verduras</th>
+            </tr>
+            <tr>
+                <th>Manzanas</th>
+                <th>Peras</th>
+                <th>Zanahorias</th>
+                <th>Betabeles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Enero</th>
+                <td>5</td>
+                <td>6</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Febrero</th>
+                <td>5</td>
+                <td>9</td>
+                <td>3</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>Marzo</th>
+                <td>3</td>
+                <td>6</td>
+                <td>4</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Abril</th>
+                <td>2</td>
+                <td>6</td>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Mayo</th>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
