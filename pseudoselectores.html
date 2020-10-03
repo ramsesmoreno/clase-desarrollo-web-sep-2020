@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoselectores</title>
+    <style>
+        a {
+            font-size: 2em;
+            transition: all 0.5s;
+        }
+        a:link {
+            color: violet;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            color: green;
+            font-size: 1.5em;
+
+        }
+        a:active {
+            color: cyan;
+        }
+        h1:first-child {
+            color: purple;
+        }
+        h1:last-of-type {
+            color: darkcyan;
+        }
+        input:focus {
+            border: 5px solid violet;
+            background-color: yellow;
+            font-size: 1.5em;
+        }
+        h1:last-of-type + p {
+            color: grey;
+        }
+        h1:last-of-type + p::first-line {
+            color: black;
+        }
+        h1:last-of-type + p::first-letter {
+            font-size: 3em;
+            display: block;
+            color: black;
+            float: left;
+            margin-right: 0.5rem;
+        }
+        blockquote {
+            background-color: lightgray;
+            padding: 2em;
+            position: relative;
+            text-align: center;
+            margin: 1em 5em;
+            transition: all 0.5s;
+            box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.25);
+        }
+        body {
+            perspective: 800px;
+        }
+        blockquote:hover {
+            transform: rotate3d(0, 1, 0, 45deg);
+            box-shadow: 1em 1em 0.5em rgba(0, 0, 0, 0.25);
+        }
+        blockquote::before {
+            content: '«';
+            font-size: 3em;
+            position: absolute;
+            top: -.5rem;
+            left: -.5rem;
+        }
+        blockquote::after {
+            content: '»';
+            font-size: 3em;
+            position: absolute;
+            bottom: -.5rem;
+            right: -.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo clases</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Quibusdam harum facere quasi repellendus</a>, eius ratione deserunt sint quam corrupti porro possimus hic, nostrum explicabo commodi <a href="dosx.html">Quibusdam harum facere quasi repellendus</a> facilis, nihil repellat eum autem.</p>
+    <form>
+        <input type="text" name="nombre">
+    </form>
+    <h1>Pseudo elementos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore, eum, consequuntur molestias impedit soluta ex doloremque libero quaerat magni, sunt sint dignissimos asperiores aut illum sed voluptatibus. Dolorum, dolores?</p>
+    <blockquote>Esta es mi cita sdsdshj sdhsjdhsjdhsjhd h sdhsdj shsd sjd jsd js</blockquote>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore, eum, consequuntur molestias impedit soluta ex doloremque libero quaerat magni, sunt sint dignissimos asperiores aut illum sed voluptatibus. Dolorum, dolores?</p>
+</body>
+</html>
